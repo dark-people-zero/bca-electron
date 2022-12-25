@@ -1,0 +1,30 @@
+{
+  "name": "bca-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "moment": "^2.29.4"
+  },
+  "build": {
+    "appId": "bca-electron.id",
+    "mac": {
+      "category": "bca-electron.category.type"
+    }
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}
